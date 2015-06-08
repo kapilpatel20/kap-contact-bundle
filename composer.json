@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Extra awesome contact bundle for Symfony2",
     "keywords": ["contact", "bundle"],
-    "homepage": "http://github.com/kapilpatel20/KapContactBundle",
+    "homepage": "https://github.com/kapilpatel20/kap-contact-bundle",
     "license": "MIT",
     "authors": [
         {

@@ -1,0 +1,3 @@
+kap_contact:
+    path:     /contact
+    defaults: { _controller: KapContactBundle:Contact:index }

@@ -1,0 +1,25 @@
+{
+    "name": "kap/contact-bundle",
+    "type": "symfony-bundle",
+    "description": "Extra awesome contact bundle for Symfony2",
+    "keywords": ["contact", "bundle"],
+    "homepage": "http://github.com/kapilpatel20/KapContactBundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kapil Patel",
+            "email": "kapil.patel@brainvire.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.9"
+    },
+    "require-dev": {
+        "symfony/framework-bundle": ">=2.1,<=2.7"
+    },
+    "autoload": {
+        "psr-0": { "Kap\\ContactBundle": "" }
+    },
+    "minimum-stability": "dev",
+    "target-dir": "Kap/ContactBundle"
+}

@@ -1,3 +1,45 @@
-{{ form_start(form) }}
-{{ form_widget(form) }}
-{{ form_end(form) }}
+
+<section id="content">
+    <div class="section">
+        <div class=" container">
+        <div class="row">
+            <div class="col-sm-8">
+                {{ form_start(form, {'attr': {'novalidate': 'novalidate'}} ) }}
+                    <div class="row">
+                        <div class="form-group">
+                            {{ form_widget(form.name, { 'attr': {'class': 'input-text full-width', 'data-prompt-position': 'topRight', 'placeholder': 'Name *'}}) }}
+                            {% if form_errors(form.name) %}
+                                <div class="serverError">{{ form_errors(form.name) }}</div>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            {{ form_widget(form.email, { 'attr': {'class': 'input-text full-width', 'data-prompt-position': 'topRight', 'placeholder': 'Email *'}}) }}
+                            {% if form_errors(form.email) %}
+                                <div class="serverError">{{ form_errors(form.email) }}</div>
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            {{ form_widget(form.subject, { 'attr': {'class': 'input-text full-width', 'data-prompt-position': 'topRight', 'placeholder': 'Subject *'}}) }}
+                            {% if form_errors(form.subject) %}
+                                <div class="serverError">{{ form_errors(form.subject) }}</div>
+                            {% endif %}
+                        </div>
+
+                        <div class="form-group">
+                            
+                            {{ form_widget(form.message, { 'attr': {'class': 'input-text full-width', 'data-prompt-position': 'topRight', 'placeholder': 'Message *'}}) }}
+                            {% if form_errors(form.message) %}
+                                <div class="serverError">{{ form_errors(form.message) }}</div>
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                           {{ form_widget(form.save,  { 'attr': {'class': 'btn btn-md style1'}} ) }}
+                        </div>
+                    </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
